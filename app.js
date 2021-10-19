@@ -71,8 +71,14 @@ app.use('/', express.static(__dirname + '/public'));
 app.get("/no-js", function(req, res) {
     // grab the "url" parameter from the querystring
     var site = querystring.parse(url.parse(req.url).query).url;
+    
+    // test 
+    let buff = new Buffer(site);
+    let base64data = buff.toString('base64');
+    
+    
     // and redirect the user to /proxy/url
-    res.redirect(unblockerConfig.prefix + site);
+    res.redirect(unblockerConfig.prefix + base64data);
 });
 
 // for compatibility with gatlin and other servers, export the app rather than passing it directly to http.createServer
