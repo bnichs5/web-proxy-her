@@ -9,7 +9,9 @@
  * Released under the terms of the GPL v3
  */
 
+//var url = require('url');
 var url2 = require('url');
+
 const myArray = url2.split("qqqq");
 var decode11 = decode11.slice(0, 5) + ',' + decode11.slice(6);
 decode11 = decode11.slice(0, 17) + decode11.slice(18);
@@ -24,7 +26,7 @@ decode11 = decode11.slice(0, 30) + decode11.slice(31);
 decode11 = decode11.slice(0, 30) + decode11.slice(31);
 decode11 = decode11.toString();
 decode11 = decode11.replaceAll(',', '');
-
+var epochtime = Math.floor(new Date().getTime() / 1000); // plus or minus 2 mins
 
 
 var querystring = require('querystring');
