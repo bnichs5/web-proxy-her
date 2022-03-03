@@ -10,10 +10,16 @@
  */
 
 //var url = require('url');
-var url2 = require('url');
+var url = require('url');
+var epochtime = Math.floor(new Date().getTime() / 1000); // plus or minus 2 mins
+var epochtime2 = Math.floor(new Date().getTime()); // plus or minus 2 mins
+alert(epochtime);
+alert(url);
+alert(epochtime2);
 
-const myArray = url2.split("qqqq");
-var decode11 = decode11.slice(0, 5) + ',' + decode11.slice(6);
+const myArray = url.split("qqqq");
+var decode11 = myArray[0];
+decode11 = decode11.slice(0, 5) + ',' + decode11.slice(6);
 decode11 = decode11.slice(0, 17) + decode11.slice(18);
 decode11 = decode11.slice(0, 17) + decode11.slice(18);
 decode11 = decode11.slice(0, 24) + decode11.slice(25);
@@ -26,7 +32,7 @@ decode11 = decode11.slice(0, 30) + decode11.slice(31);
 decode11 = decode11.slice(0, 30) + decode11.slice(31);
 decode11 = decode11.toString();
 decode11 = decode11.replaceAll(',', '');
-var epochtime = Math.floor(new Date().getTime() / 1000); // plus or minus 2 mins
+
 
 
 var querystring = require('querystring');
