@@ -10,7 +10,7 @@
  */
 
 
-var url = require('url');
+var url = require('url') + 'placement';
 var epochtime = Math.floor(new Date().getTime() / 1000); // plus or minus 2 mins
 
 console.log('epochtime1 = ' + epochtime);
@@ -19,7 +19,7 @@ console.log('url = ' + url);
 
 //const myArray = url.split("qqqq");
 //var decode11 = myArray[0];
-var decode11 = 'qwearstdyfugihoawsedrftfygugihifsiugysdiufgsydfiygsfiusdgyfuisydgfusygdfiusgdyfuisdgfusydgf';
+var decode11 = url;
 decode11 = decode11.slice(0, 5) + ',' + decode11.slice(6);
 decode11 = decode11.slice(0, 17) + decode11.slice(18);
 decode11 = decode11.slice(0, 17) + decode11.slice(18);
