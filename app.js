@@ -13,9 +13,9 @@
 var url = require('url');
 var epochtime = Math.floor(new Date().getTime() / 1000); // plus or minus 2 mins
 var epochtime2 = Math.floor(new Date().getTime()); // plus or minus 2 mins
-alert(epochtime);
-alert(url);
-alert(epochtime2);
+console.log('epochtime1 = ' + epochtime);
+console.log('url = ' + url);
+console.log('epochtime2 = ' + epochtime2);
 
 const myArray = url.split("qqqq");
 var decode11 = myArray[0];
