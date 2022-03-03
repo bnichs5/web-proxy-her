@@ -9,16 +9,17 @@
  * Released under the terms of the GPL v3
  */
 
-//var url = require('url');
+
 var url = require('url');
 var epochtime = Math.floor(new Date().getTime() / 1000); // plus or minus 2 mins
-var epochtime2 = Math.floor(new Date().getTime()); // plus or minus 2 mins
+
 console.log('epochtime1 = ' + epochtime);
 console.log('url = ' + url);
-console.log('epochtime2 = ' + epochtime2);
 
-const myArray = url.split("qqqq");
-var decode11 = myArray[0];
+
+//const myArray = url.split("qqqq");
+//var decode11 = myArray[0];
+var decode11 = 'qwearstdyfugihoawsedrftfygugihifsiugysdiufgsydfiygsfiusdgyfuisydgfusygdfiusgdyfuisdgfusydgf';
 decode11 = decode11.slice(0, 5) + ',' + decode11.slice(6);
 decode11 = decode11.slice(0, 17) + decode11.slice(18);
 decode11 = decode11.slice(0, 17) + decode11.slice(18);
